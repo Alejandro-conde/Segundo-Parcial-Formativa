@@ -1,0 +1,695 @@
+/* Patrones Globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía Única: Quicksand */
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Antonio', sans-serif; }
+
+aside#boton-wp a { font-family: 'Montserrat', sans-serif;  }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure, img { margin: 0; }
+
+
+
+/* Estilo Propio */
+
+/* Compontente Botón WhatsApp flotante */
+aside#boton-wp { 
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99998; }
+
+aside#boton-wp a { 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: relative;
+    display: block;
+    background: #00bb2d;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.3s ease-in; }
+
+aside#boton-wp a i { 
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #fff;
+    transition: all 0.3s ease-in; }
+
+aside#boton-wp a:hover { 
+    background: #000; 
+    transition: all 0.3s ease-in; }
+
+aside#boton-wp a:hover i { 
+    color: #00bb2d; 
+    transition: all 0.3s ease-in; }
+
+/* Caja Main */
+main { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+
+/* Componente Menú Responsive */
+aside#menu-moviles {  
+    width: 290px;
+    height: 100%;
+    display: none;
+    margin: 0;
+    float: none;
+    position: fixed;
+    right: -290px;
+    bottom: 0;
+    z-index: 99999;
+    background: #13445ad6; }
+
+aside#menu-moviles a#abrir-menu { 
+    width: 35px;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #147aa9;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 10px; 
+    border-radius: 5px 0 0 5px;
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#abrir-menu:hover { 
+    background: #350a5d; 
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu { 
+    width: 35px;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    display: none;
+    text-decoration: none;
+    color: #fff;
+    background: #147aa9;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 10px; 
+    border-radius: 5px 0 0 5px;
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu:hover { 
+    background: #350a5d; 
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { 
+    width: 60%;
+    height: auto;
+    margin: 15% auto;
+    float: none;
+    position: relative; }
+
+aside#menu-moviles nav a {  
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25em;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav a:hover { 
+    color: #f3114f;
+    transition: all 0.3s ease-in; }
+
+/* Bloque Productos */
+
+/* Componente Header con Logo y Menú */
+header { 
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    float: none;
+    left: 0;
+    top: 0;
+    z-index: 99990;
+    background: #13445a; } 
+header article { 
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    float: none;
+    position: relative; }
+header article figure { 
+    width: 152px;
+    height: 60px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    top: 10px; }
+header article figure a { 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    display: block; }
+header article figure a img { 
+    width: auto;
+    height: 60px;
+    float: none;
+    position: relative;
+    display: block; }
+header article nav { 
+    height: 40px;
+    margin: 0;
+    float: right;
+    position: relative;
+    top: 20px; }
+header article nav a { 
+    width: auto;
+    height: auto;
+    margin: 0 15px;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 12px 0; 
+    border-bottom: solid 2px #fff; 
+    transition: all 0.3s ease-in; }
+header article nav a:hover { 
+    color: #002c50; 
+    border-bottom: solid 2px #0162b1; 
+    transition: all 0.3s ease-in; }
+	
+/* Slick Slider */
+main section#zona-slider { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section#zona-slider article.slick-slider { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section#zona-slider article.slick-slider figure#slide-01 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat top center; 
+	background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-02 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat top center; 
+	background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-03 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1351&q=80') no-repeat bottom center; 
+	background-size: cover; }
+
+.slick-prev { left: 25px !important; z-index: 9 !important; }
+.slick-next { right: 25px !important; z-index: 10 !important; }
+
+main section.bloque-productos { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto 75px; 
+    float: none; 
+    position: relative; }
+main section.bloque-productos article { 
+    width: 1100px; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section.bloque-productos article h3 { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    font-size: 3.125em; 
+    letter-spacing: -0.015em; 
+    padding: 12px 12px; 
+    font-weight: 400; }
+main section.bloque-productos article nav { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section.bloque-productos article nav a { 
+    width: 524px; 
+    height: 286px; 
+    margin: 12px; 
+    float: none; 
+    position: relative; 
+    display: inline-block; 
+    transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.nombre-producto { 
+    width: 90%; 
+    height: auto; 
+    display: block; 
+    float: none; 
+    position: absolute; 
+    bottom: 70px; 
+    left: 5%; 
+    z-index: 2; 
+    font-size: 3.125em; 
+    letter-spacing: -0.015em; 
+    padding: 0 12px; 
+    font-weight: 400; 
+    color: #fff; 
+    text-shadow: 0 0 5px #000; 
+    transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.precio-producto { 
+    width: 90%; 
+    height: auto; 
+    display: block; 
+    float: none; 
+    position: absolute; 
+    bottom: 35px; 
+    left: 5%; 
+    z-index: 2; 
+    font-size: 2em; 
+    letter-spacing: -0.015em; 
+    padding: 0 12px; 
+    font-weight: 200; 
+    color: #fff; 
+    text-shadow: 0 0 5px #000; 
+    transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a img { 
+    width: 100%; 
+    height: auto; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
+    transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a:hover { 
+    transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.nombre-producto { 
+    color: #000; 
+    text-shadow: none; 
+    transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.precio-producto { 
+    color: #333; 
+    text-shadow: none; 
+    transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover img { 
+    opacity: 0.3; 
+    transition: all 0.3s ease-in; }
+
+
+/* Bloque Categorías */
+main section#bloque-categorias { 
+    width: 100%; 
+    height: auto; 
+    margin: 35px auto 75px; 
+    float: none; 
+    position: relative; }
+main section#bloque-categorias nav { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section#bloque-categorias nav a { 
+    width: 31%; 
+    height: 400px; 
+    margin: 0 1%; 
+    float: none; 
+    position: relative; 
+    display: inline-block; 
+    transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a#img-camas { 
+    background: url('https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat top center; 
+    background-size: cover; }
+main section#bloque-categorias nav a#img-sofas { 
+    background: url('https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat top center; 
+    background-size: cover; }
+main section#bloque-categorias nav a#img-escritorios { 
+    background: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1351&q=80') no-repeat top center; 
+    background-size: cover; }
+
+main section#bloque-categorias nav a span.nombre-categoria { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    float: none; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 2; 
+    text-align: center; 
+    font-size: 3.125em; 
+    line-height: 1em; 
+    letter-spacing: 0.035em; 
+    padding: 174px 12px; 
+    font-weight: 100; 
+    color: #fff; 
+    transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a span.capa-oscura { 
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+    margin: 0 auto; 
+    float: none; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
+    background: rgb(0 0 0 / 35%); 
+    transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a:hover span.nombre-categoria { 
+    letter-spacing: 0.095em; 
+    color: #999; 
+    transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a:hover span.capa-oscura { 
+    background: rgb(0 0 0 / 75%); 
+    transition: all 0.3s ease-in; }
+	
+main section#producto article { width: 1100px;
+    height: 520px;
+    margin: 0 auto;
+    float: none; 
+    position: relative; }
+main section#producto article figure { width: 520px;
+    height: 520px;
+    margin: 0 100px 0 0;
+    float: left; 
+    position: relative; }
+main section#producto article figure img { width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none; 
+    position: relative;
+    display: block; }
+main section#producto article div#info_producto { width: 480px;
+    height: 520px;
+    margin: 0;
+    float: right; 
+    position: relative; }
+main section#producto article div#info_producto h5 { 
+    font-weight: 400;
+    font-size: 1.05em;
+    line-height: 1.45em;
+    text-align: left;
+    padding: 0 50px 30px 0;
+    letter-spacing: 0.015em; }
+main section#producto article div#info_producto h2 { text-decoration: none;
+    color: ##002c50;
+    font-weight: 500;
+    font-size: 1.85em;
+    line-height: 1em;
+    text-align: left;
+    padding: 65px 0 20px;
+    letter-spacing: -0.02em; }
+main section#producto article div#info_producto h1 { text-decoration: none;
+    color: #800000;
+    font-weight: 800;
+    font-size: 3.8em;
+    line-height: 1em;
+    text-align: left;
+    padding: 0 0 30px;
+    letter-spacing: -0.02em; }
+main section#producto article div#info_producto p { color: #333;
+    font-weight: 400;
+    font-size: 1.05em;
+    line-height: 1.45em;
+    text-align: left;
+    padding: 0 50px 30px 0;
+    letter-spacing: 0.015em; }
+main section#producto article div#info_producto a { width: 120px;
+    height: auto;
+    margin: 0;
+    float: none;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: #002c50;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 12px 22px; 
+    border-radius: 25px;
+    transition: all 0.3s ease-in; }
+main section#producto article div#info_producto a:hover { padding: 12px 25px; 
+    color: #ffff;
+    background: #0162b1;
+    transition: all 0.3s ease-in; }
+
+/* Componente Footer */
+footer { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; background: #13445ad6;  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350a5d', endColorstr='#002c50',GradientType=0 ); }
+
+footer div#ancla-footer { width: 100%; height: 1px; margin: 0; float: none; position: absolute; top: -120px; left: 0; }
+
+footer article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+
+footer article div#superior-footer { width: 100%; height: 200px; margin: 0 auto 30px; float: none; position: relative; }
+footer article div#superior-footer div.cajas-footer { width: 230px; height: 200px; margin: 0 60px 0 0; float: left; position: relative; }
+footer article div#superior-footer div.cajas-footer:last-child { margin: 0; }
+
+footer article div#superior-footer div.cajas-footer img { width: auto; height: 50px; margin: 0 0 15px; display: block; float: none; position: relative; margin-left: 27%;}
+footer article div#superior-footer div.cajas-footer p { width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 300; font-size: 0.9em; line-height: 1.35em; text-align: left; padding: 0 30px 0 0; letter-spacing: 0.03em; }
+footer article div#superior-footer div.cajas-footer h6 { width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.4em; line-height: 1.35em; text-align: left; padding: 0 0 15px 0; letter-spacing: 0.03em; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto { width: 200px; height: auto; display: block; margin: 0; float: none; position: relative; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a { width: 100%; height: 22px; display: block; margin: 0 auto 5px; float: none; position: relative; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:first-child { height: 40px; }
+
+footer article div#superior-footer div.cajas-footer nav#links-contacto a i { width: 10%; height: auto; display: block; margin: 0 2% 0 0; float: left; position: relative; padding: 3px 0 0 0; color: #8bc8f1; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a span { width: 88%; height: auto; display: block; margin: 0; float: left; position: relative; padding: 0; color: #fff; font-weight: 300; font-size: 0.93em; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover { transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover i { color: #fff; transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover span { color: #09f; transition: all 0.3s ease-in;  }
+
+/* Componente botones redes sociales */
+footer article div#superior-footer div.cajas-footer nav#links-redes { width: 200px;
+    height: 45px;
+    margin: 0 auto;
+    float: none;
+    position: relative; }
+footer article div#superior-footer div.cajas-footer nav#links-redes a { width: 41px;
+    height: auto;
+    margin: 0;
+    float: left;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.3s ease-in }
+
+/* footer article div#superior-footer div.cajas-footer nav#links-redes a:hover {  } */
+footer article div#superior-footer div.cajas-footer nav#links-redes a i { 
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #fff;
+    transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-redes a:hover i { 
+    color: #0981e4; 
+    transition: all 0.3s ease-in; }
+
+/* Inferior footer */
+footer article div#inferior-footer { 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+ }
+ footer article div#inferior-footer p {  
+    width: auto;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.35em;
+    text-align: center;
+    padding: 0; 
+    letter-spacing: 0.1em;}
+footer article div#inferior-footer p strong { 
+    font-weight: 600; }
+footer article div#superior-footer figure{ 
+    text-align: end; }
+
+/* Zona de Media Queries */
+
+/* Tablets */
+
+@media only screen and (max-width: 1199px){
+	header article { 
+        width: 90%; }
+    header article figure {
+        margin: 0 auto;
+        float: none; }
+    header article nav { 
+        display: none; }
+
+	aside#menu-moviles { display: block; }
+	
+    main section.bloque-productos article { 
+        width: 80%; }
+    main section.bloque-productos article h3 { 
+        text-align: center; 
+        padding: 0 12px 10px 12px; }
+    main section.bloque-productos article nav a { 
+        width: 100%; 
+        height: 286px; 
+        margin: 0 auto 25px; 
+        display: block; 
+        overflow: hidden; }
+    main section.bloque-productos article nav a img { 
+        width: auto; 
+        height: 100%; }
+    footer article { 
+        width: 80%;}
+    footer article div#superior-footer { 
+        height: auto; }
+    footer article div#superior-footer div.cajas-footer { 
+        height: auto; 
+        margin: 0 auto 50px; 
+        float: none;}
+    footer article div#superior-footer div.cajas-footer img { 
+        margin: 0 auto 15px;
+        float: none; }
+    footer article div#superior-footer div.cajas-footer p {
+        text-align: center;
+        padding: 0; }
+    footer article div#superior-footer div.cajas-footer h6 {
+        text-align: center; }
+    footer article div#superior-footer div.cajas-footer nav#links-redes{ 
+        width: 168px;
+        height: 41px;
+        margin: 0 auto;
+        float: none; }
+    footer article div#superior-footer div.cajas-footer:last-child { 
+        margin: 0 auto 40px; }
+    footer article div#superior-footer figure{ 
+        text-align: center; }
+	main section#producto article { 
+        width: 80%;
+        height: auto; }
+    main section#producto article figure { 
+        width: 100%;
+        height: 340px;
+        margin: 0 auto;
+        float: none; }
+    main section#producto article div#info_producto { 
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        float: none;
+		margin-top: 206px;}
+
+    main section#producto article div#info_producto h5 { 
+        text-align: center;}
+	main section#producto article div#info_producto h2 { 
+        text-align: center;
+        padding: 30px 0 20px; }
+    main section#producto article div#info_producto h1 { 
+        text-align: center;
+        padding: 0 0 30px; }
+    main section#producto article div#info_producto p { 
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        padding: 0 0 15px; }
+    main section#producto article div#info_producto a {
+        margin: 10px auto 0 auto;
+        float: none;
+        width: 150px;
+        text-align: center; }
+}
+
+@media only screen and (max-width: 999px){
+    
+}
+
+@media only screen and (max-width: 899px){
+    main section#bloque-categorias nav a { 
+        width: 96%; 
+        margin: 2% auto; 
+        display: block; }
+}
+
+@media only screen and (max-width: 699px){
+    
+}
+
+/* Móviles Grandes */
+@media only screen and (max-width: 499px){
+    main section.bloque-productos article { 
+        width: 90%; }
+	header article figure {
+        margin: 0 auto;
+        float: none;
+        width: 150px;
+        text-align: center;
+    }
+}
+
+/* Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
+
+
+    
